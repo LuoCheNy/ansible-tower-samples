@@ -1,6 +1,11 @@
 - name: Hello World Sample
   hosts: all
   tasks:
+    - name: Hello Message Error
+      debug:
+        msg: "Hello World!"
+      error_when: true
+      ignore_error: true
     - name: Hello Message
       debug:
         msg: "Hello World!"
