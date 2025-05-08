@@ -4,8 +4,8 @@
     - name: Hello Message Error
       debug:
         msg: "Hello World!"
-      error_when: true
-      ignore_error: true
+      failed_when: true
+      ignore_errors: true
     - name: Hello Message
       debug:
         msg: "Hello World!"
